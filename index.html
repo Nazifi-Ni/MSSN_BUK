@@ -20,7 +20,7 @@
             <div class="header-content">
                 <div class="logo-section">
                     <div class="logo">
-                        <i class="fas fa-mosque"></i>
+                        <img src="mss.jpg" alt="">
                     </div>
                     <div>
                         <div class="org-name">MUSLIM STUDENTS' SOCIETY OF NIGERIA</div>
@@ -34,7 +34,7 @@
         <main>
             <section class="hero-section">
                 <div class="hero-content">
-                    <img src="5.jpg" alt="">
+                    <img id="responsive-img" src="large.jpg" alt="Image">
                     <h1 class="main-title">
                         <span class="muslim-text"></span><br>
                         <span class="muslim-text"></span><br>
@@ -133,14 +133,32 @@
         });
 
         // Add click effects to social icons
-        document
+        document.querySelectorAll('.social-icon').forEach(function(item) {
+            item.addEventListener('mouseenter', function() {
+                this.style.background = '#f0f0f0';
+                this.style.padding = '0.7rem 0.2rem';
             });
-            
             item.addEventListener('mouseleave', function() {
                 this.style.background = 'transparent';
                 this.style.padding = '0.5rem 0';
             });
         });
+
+
+        function updateImage() {
+  const img = document.getElementById("responsive-img");
+  if (window.innerWidth < 480) {
+    img.src = "banner.jpg";
+  } else if (window.innerWidth < 768) {
+    img.src = "medium.jpg";
+  } else {
+    img.src = "large.jpg";
+  }
+}
+
+window.addEventListener('resize', updateImage);
+window.addEventListener('load', updateImage);
+
     </script>
 </body>
 </html>
