@@ -1,4 +1,4 @@
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -89,6 +89,13 @@
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .org-name {
@@ -240,7 +247,7 @@
         }
 
         .offerings h3 {
-            color: white;
+            color: #3b3335;
             font-size: 1.5rem;
             margin-bottom: 1rem;
             display: flex;
@@ -404,6 +411,9 @@ header{
 font-size: 2px;
 
  }
+  .offerings h3{
+                font-size: 25px;
+            }
 
 
  }
@@ -427,7 +437,7 @@ font-size: 2px;
                 gap: 1rem;
             }
 .offerings{
-    margin-top: 44rem;
+    margin-top: 51rem;
 }
  
         }
@@ -449,20 +459,27 @@ font-size: 2px;
                 margin-top: -4rem;
             }
            .offerings{
-            margin-top: 64rem;
+            margin-top: 78rem;
            }
 
         }
  @media (max-width: 400px){
  .offerings {
-    margin-top: 34rem;
+    margin-top: 40rem;
     margin-bottom: 3rem;
+            }
+             .offerings h3{
+                font-size: 20px;
             }
  }
  @media (max-width: 350px){
  .offerings {
-    margin-top: 40rem;
+
+    margin-top: 44rem;
     margin-bottom: 3rem;
+            }
+            .offerings h3{
+                font-size: 20px;
             }
  }
         @media (min-width: 1024px) {
@@ -484,9 +501,10 @@ font-size: 2px;
 
             }
     .offerings{
-        margin-top: 20rem;
-        margin-bottom:5rem;
+        margin-top: 58rem;
+        margin-bottom:10rem;
     }
+
         }
 
         .particle {
@@ -514,4 +532,3 @@ font-size: 2px;
                 opacity: 0;
             }
         }
- 
